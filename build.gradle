@@ -36,14 +36,14 @@ dependencies {
       'joda-time:joda-time:2.+',
       'org.springframework.boot:spring-boot-starter-data-rest',
       'org.springframework.boot:spring-boot-starter-data-jpa',
+      'mysql:mysql-connector-java',
       'com.google.code.findbugs:jsr305:3.+',
       'com.h2database:h2:1.4.+'
   testCompile 'com.jayway.restassured:rest-assured:2.+',
       'com.jayway.restassured:json-schema-validator:2.+',
       'junit:junit:4.+',
       'org.mockito:mockito-core:2.+',
-      'org.springframework.boot:spring-boot-starter-data-rest-test',
-      'org.springframework.boot:spring-boot-starter-data-jpa-test'
+      'org.springframework.boot:spring-boot-starter-data-test'
 }
 
 task wrapper(type: Wrapper) {

@@ -18,7 +18,7 @@ import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 @WebAppConfiguration
 @SpringApplicationConfiguration(Application.class)
 @IntegrationTest
-public class RestAssuredSpec {
+public class RestAssuredGreetingSpec {
 
   @Test
   public void get_greeting() {
