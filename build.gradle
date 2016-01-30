@@ -38,7 +38,9 @@ dependencies {
       'org.springframework.boot:spring-boot-starter-data-jpa',
       'mysql:mysql-connector-java',
       'com.google.code.findbugs:jsr305:3.+',
-      'com.h2database:h2:1.4.+'
+      'com.h2database:h2:1.4.+',
+      'org.projectlombok:lombok:1.16.+'
+
   testCompile 'com.jayway.restassured:rest-assured:2.+',
       'com.jayway.restassured:json-schema-validator:2.+',
       'junit:junit:4.+',
@@ -47,5 +49,5 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = '2.9'
+  gradleVersion = '2.10'
 }
