@@ -36,6 +36,8 @@ dependencies {
       'joda-time:joda-time:2.+',
       'org.springframework.boot:spring-boot-starter-data-rest',
       'org.springframework.boot:spring-boot-starter-data-jpa',
+      'org.mongodb:mongo-java-driver:3.+',
+      'org.springframework.data:spring-data-mongodb:1.+',
       'mysql:mysql-connector-java',
       'com.google.code.findbugs:jsr305:3.+',
       'com.h2database:h2:1.4.+',
@@ -45,7 +47,8 @@ dependencies {
       'com.jayway.restassured:json-schema-validator:2.+',
       'junit:junit:4.+',
       'org.mockito:mockito-core:2.+',
-      'org.springframework.boot:spring-boot-starter-test'
+      'org.springframework.boot:spring-boot-starter-test',
+      'de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.50.+'
 }
 
 task wrapper(type: Wrapper) {

@@ -12,7 +12,7 @@ import java.util.Properties;
 
 public abstract class DbRepositoryConfig implements RepositoryConfig{
 
-  protected LocalContainerEntityManagerFactoryBean newEntityManagerFactory(Database db) {
+  protected LocalContainerEntityManagerFactoryBean newEntityManagerFactory(final Database db) {
     LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
     entityManagerFactoryBean.setDataSource(dataSource());
     entityManagerFactoryBean.setPackagesToScan("me.heaton.spring.db");
